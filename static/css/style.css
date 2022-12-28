@@ -4,18 +4,23 @@
     align: "center";
 }
 
+.comment {
+    margin-top: 50px;
+}
+
+
+.sub-text {
+    font-size: 10px
+    color: #868e96;
+    font-style: italic;
+}
+
 .commentText {
     /*order: 1;*/
     font-size: 30px;
     color: #212529;
     font-family: 'Lora', 'Times New Roman', serif;
     display: inline;
-}
-
-.sub-text {
-    font-size: 10px
-    color: #868e96;
-    font-style: italic;
 }
 
 .commenterImage {
@@ -26,8 +31,16 @@
 }
 
 
+/*
 .commentList {
-    align: center;
+  text-align: left;
+  list-style-position: inside;
+}
+*/
+.commentList ul {
+    display: table;
+    margin: auto;
+    text-align: left;
 }
 
 
