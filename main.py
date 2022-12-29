@@ -1,5 +1,5 @@
+import os
 import re
-import html
 from urllib.parse import urlparse, urljoin
 
 import bleach as bleach
@@ -17,7 +17,7 @@ from forms import CreatePostForm, CreateRegisterForm, CreateLoginForm, CreateCom
 from functools import wraps
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
